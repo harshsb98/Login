@@ -1,0 +1,26 @@
+<h1>Deployed</h1>
+<div>
+  <mat-card class="a">
+  <mat-card-title >Welcome To My Website</mat-card-title>
+    <mat-card-subtitle>LOGIN</mat-card-subtitle>
+
+        <mat-form-field appearance="legacy">
+          <input matInput [(ngModel)]="a" type="text" placeholder="E-mail">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="legacy">
+          <input matInput [(ngModel)]="b" type="password" placeholder="Password">
+  </mat-form-field>
+<br>
+<a routerLink="/ss"><button mat-raised-button-button (click)="pri()">Sign-In</button></a>
+<a routerLink="/sign-up"><button mat-raised-button-button>Sign-Up</button></a>
+
+          <mat-card-footer>All Rights Reserved* </mat-card-footer>
+  </mat-card>
+</div>
+
+<ul>
+    <li *ngFor="let titl of e">
+      {{titl.title}}
+    </li>
+</ul>
